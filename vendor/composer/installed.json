@@ -1,0 +1,35 @@
+{
+    "packages": [
+        {
+            "name": "rok9ru/trpo-core",
+            "version": "2.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/trpo-core",
+                "reference": "fd341399677df9ed17a71e4abb9230277ede5395"
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "time": "2021-01-13T12:08:11+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "core\\": "core"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "description": "Project for lesson subject \"TRPO\" test project",
+            "install-path": "../rok9ru/trpo-core"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

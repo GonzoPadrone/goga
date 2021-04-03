@@ -1,0 +1,31 @@
+{
+	"name": "gonzopadrone/goga",
+	"description": "goga",
+	"type": "library",
+		"license": "-",
+		"authors": [
+				{
+					"name": "zolotarev egor",
+					"email": "zolotarev_egor.kolegh@yandex.ru"
+				}
+		],
+		
+		"minimum-stability": "dev",
+		
+	"require": {
+				"rok9ru/trpo-core": "2.0"
+		},
+		
+		"autoload":{
+				"psr-4":{
+						"Zolotarev\\": "Zolotarev"
+				}
+		},
+		
+		"repositories": [
+					{
+						"type": "git",
+						"url": "https://github.com/rok9ru/trpo-core"
+					}
+			]
+}
