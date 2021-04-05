@@ -25,7 +25,7 @@ Class MyLog extends LogAbstract implements LogInterface
         $date = date('d.m.Y_H.i.s.v');
         foreach ($this->log as $value) {
             echo $value . "\n";
-            file_put_contents( $_SERVER[DOCUMENT_ROOT]."log\\$date.log", $value . PHP_EOL, FILE_APPEND);
+            file_put_contents("log\\$date.log", $value . PHP_EOL, FILE_APPEND);
         }
         echo "\n\rLog: $date";
     }
