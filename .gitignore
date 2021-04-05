@@ -7,5 +7,5 @@ log
 version
 
 .vscode
-vender
+vendor
 composer.phar

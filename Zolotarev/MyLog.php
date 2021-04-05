@@ -15,7 +15,7 @@ Class MyLog extends LogAbstract implements LogInterface
     /**
      * @param String $str строка для записи в массив лога
      */
-    public static function log($str)
+    public static function log(string $str) :void
     {
         self::Instance()->_log($str);
     }
@@ -25,12 +25,12 @@ Class MyLog extends LogAbstract implements LogInterface
         $date = date('d.m.Y_H.i.s.v');
         foreach ($this->log as $value) {
             echo $value . "\n";
-            file_put_contents(__DIR__ . "\..\log\\$date.log", $value . PHP_EOL, FILE_APPEND);
+            file_put_contents( $_SERVER[DOCUMENT_ROOT]."log\\$date.log", $value . PHP_EOL, FILE_APPEND);
         }
         echo "\n\rLog: $date";
     }
 
-    public static function write()
+    public static function write() :void
     {
         self::Instance()->_write();
     }
